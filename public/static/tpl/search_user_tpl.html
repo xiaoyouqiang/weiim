@@ -1,0 +1,23 @@
+<div id="user_list">
+    {{#  layui.each(d.data, function(index, item){ }}
+    <div class="friend_item" style="border: 3px solid #f6f6f6;">
+        <div>
+            <h5 style="font-size: 14px">{{item.username}}</h5>
+        </div>
+        <div style="margin-top:15px;margin-bottom: 75px;">
+            <div style="margin: 0 auto;float:left;">
+                <img src="{{item.avatar}}" width="50px" height="50px"/>
+            </div>
+            <div style="float: right"><button class="layui-btn layui-btn-bs" type="button" onclick="addFriend('{{item.id}}','{{item.username}}','{{item.avatar}}')">添加</button></div>
+        </div>
+    </div>
+    {{#  }); }}
+</div>
+
+{{#  if(d.page < d.totalPage){ }}
+<div id="moreUserList" style="text-align:center"><button onclick="findUser({{d.page}} + 1)" style="width: 15%;"class="layui-btn layui-btn-normal" type="button">加载更多...</button></div>
+{{#  } }}
+
+{{#  if(d.data.length === 0){ }}
+<div style="text-align: center;color: red">没有找到用户</div>
+{{#  } }}

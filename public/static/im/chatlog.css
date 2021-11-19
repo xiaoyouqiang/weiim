@@ -1,0 +1,32 @@
+.avatar{
+    float: left;
+}
+.avatar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.chatcontent{
+    width: 300px;
+    word-break: break-all;
+    clear: both;
+    padding-top: 5px;
+}
+.chattitle{
+    color: #c2c2c2;
+}
+.username{
+    float: left;;
+}
+.chattime{
+    float:right;
+}
+.chatright{
+    float: left;
+    padding-left: 10px;
+}
+.chatclear{
+    clear: both;
+    border-bottom: 1px solid #e7eaec;
+    padding-top: 10px;
+}

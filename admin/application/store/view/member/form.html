@@ -1,0 +1,41 @@
+<form class="layui-form layui-card" action="{:request()->url()}" data-auto="true" method="post" autocomplete="off">
+    <div class="layui-card-body padding-left-40">
+        <div class="layui-form-item">
+            <label class="relative block">
+                <span class="color-green font-w7">用户名</span>
+                <span class="color-desc margin-left-5">Username</span>
+                {if isset($vo) and isset($vo.username)}
+                <input disabled value='{$vo.username|default=""}' class="layui-input layui-bg-gray">
+                {else}
+                <input name="username" value='{$vo.username|default=""}' required pattern="^.{4,}$" placeholder="请输入4位及以上用户名" class="layui-input">
+                {/if}
+            </label>
+            <p class="help-block">用户名创建后，不允许再次修改。</p>
+        </div>
+        <div class="layui-form-item">
+            <label class="relative block">
+                <span class="color-green font-w7">手机号</span>
+                <span class="color-desc margin-left-5">Phone</span>
+                <input type="tel" maxlength="11" autocomplete="off" autofocus name="phone" value='{$vo.phone|default=""}' pattern="^1[3-9][0-9]{9}$" placeholder="请输入手机号" class="layui-input">
+            </label>
+            <p class="color-desc">可选，用户联系手机号码，需要填写正确的格式</p>
+        </div>
+        <div class="layui-form-item">
+            <label class="relative block">
+                <span class="color-green font-w7">签名</span>
+                <span class="color-desc margin-left-5">Sign</span>
+                <input name="sign" value='{$vo.sign|default=""}' placeholder="请输入签名" class="layui-input">
+            </label>
+            <p class="color-desc">可选，签名</p>
+        </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    {notempty name='vo.id'}<input type='hidden' value='{$vo.id}' name='id'>{/notempty}
+
+    <div class="layui-form-item text-center">
+        <button class="layui-btn" type='submit'>保存数据</button>
+        <button class="layui-btn layui-btn-danger" type='button' data-confirm="确定要取消编辑吗？" data-close>取消编辑</button>
+    </div>
+
+</form>

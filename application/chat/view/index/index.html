@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WeiIm 移动版</title>
+    <script src="/static/admin/js/jquery.min.js"></script>
+    <script src="/static/admin/js/jquery.cookie.js"></script>
+    <script src="/static/im/mobile.js"></script>
+    <script>
+        var loginToken = $.cookie('uid') ? $.cookie('uid') :0;
+        document.domain = '{$domain}';
+        runIm('{$root_domain}', "{$socket_domain}", loginToken);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

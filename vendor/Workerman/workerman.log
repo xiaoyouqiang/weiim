@@ -1,0 +1,1221 @@
+2016-09-08 09:34:36 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', Array)
+#2 D:\WWW\snake\vendor\Workerman\Applications\Events.php(247): GatewayWorker\Lib\DbConnection->query()
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\WWW\snake\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\WWW\snake\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\WWW\snake\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2016-09-08 09:34:39 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', Array)
+#2 D:\WWW\snake\vendor\Workerman\Applications\Events.php(247): GatewayWorker\Lib\DbConnection->query()
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\WWW\snake\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\WWW\snake\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\WWW\snake\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2016-09-08 09:37:25 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', Array)
+#2 D:\WWW\snake\vendor\Workerman\Applications\Events.php(247): GatewayWorker\Lib\DbConnection->query()
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\WWW\snake\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\WWW\snake\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\WWW\snake\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2016-09-08 09:46:05 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', Array)
+#2 D:\WWW\snake\vendor\Workerman\Applications\Events.php(244): GatewayWorker\Lib\DbConnection->query()
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\WWW\snake\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\WWW\snake\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\WWW\snake\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2016-09-08 09:49:25 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1721
+Stack trace:
+#0 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1721): PDO->prepare('UPDATE `wei_c...')
+#1 D:\WWW\snake\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1809): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', Array)
+#2 D:\WWW\snake\vendor\Workerman\Applications\Events.php(244): GatewayWorker\Lib\DbConnection->query()
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\WWW\snake\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\WWW\snake\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\WWW\snake\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\WWW\snake\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\WWW\snake\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-20 21:58:54 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-20 22:10:56 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 14:08:57 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 14:20:36 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 14:20:55 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:14:42 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:26:17 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:34:16 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:34:21 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:34:33 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:40:13 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:40:13 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 15:40:13 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 15:40:24 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:40:24 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 15:40:24 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 15:48:18 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:49:37 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:50:25 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:50:25 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 15:50:25 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 15:50:31 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 15:50:32 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 15:50:32 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 16:30:33 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 16:30:33 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 16:30:33 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 16:30:37 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 16:30:37 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 16:30:37 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 16:30:40 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 16:30:40 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 16:30:40 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 16:30:49 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 16:30:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 16:30:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 16:31:04 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 16:32:13 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 17:17:29 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 17:27:51 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 17:27:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 17:27:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 17:28:01 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 17:28:01 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 17:28:01 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 17:28:05 PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#8 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\phpStudy\PHPTutorial\WWW\mlaychat\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-24 17:28:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-24 17:28:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 09:38:39 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 09:59:49 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 09:59:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 09:59:49 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 10:15:49 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 10:16:13 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 10:16:34 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 10:16:52 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 10:16:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 10:16:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 12:21:45 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 12:21:57 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 12:59:57 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 12:59:57 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 12:59:57 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 12:59:57 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:01:33 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:01:46 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:01:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:01:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:01:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:03:10 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:03:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:03:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:03:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:03:49 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:03:51 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:04:14 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:04:14 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:04:15 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:04:15 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:06:38 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:10:08 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:10:08 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:10:08 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:10:08 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:10:28 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:10:45 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:12:03 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(299): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-25 13:12:03 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-25 13:12:03 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-08-28 22:16:42 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and `read` = 0' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('select count(*)...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('select count(*)...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(140): GatewayWorker\Lib\DbConnection->query('select count(*)...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"addFri...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"addFri...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-28 22:17:54 exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and `read` = 0' at line 1' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('select count(*)...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('select count(*)...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(141): GatewayWorker\Lib\DbConnection->query('select count(*)...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"addFri...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"addFri...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-08-28 22:19:52 exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mlaychat.wei_system_message' doesn't exist' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('select count(*)...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('select count(*)...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(141): GatewayWorker\Lib\DbConnection->query('select count(*)...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"addFri...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"addFri...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-09-19 22:58:05 exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mlaychat.snake_chatuser' doesn't exist' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `snake_c...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `snake_c...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(370): GatewayWorker\Lib\DbConnection->query('UPDATE `snake_c...')
+#3 [internal function]: Events::onClose('7f00000108fc000...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(365): call_user_func('Events::onClose', '7f00000108fc000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-09-19 22:58:06 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-19 22:58:06 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-22 15:33:05 exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'undefined' in 'where clause'' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_cha...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_cha...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(62): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_cha...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-09-22 15:33:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-22 15:33:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-22 15:33:12 exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'undefined' in 'where clause'' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_cha...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_cha...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(62): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_cha...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-09-22 15:40:06 exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'undefined' in 'where clause'' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_cha...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_cha...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(62): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_cha...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-09-22 15:40:10 exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'undefined' in 'where clause'' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_cha...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_cha...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(62): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_cha...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-09-23 20:34:38 exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mlaychat.wei_chatuser' doesn't exist' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1720
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1720): PDO->prepare('UPDATE `wei_cha...')
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1808): GatewayWorker\Lib\DbConnection->execute('UPDATE `wei_cha...', NULL)
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(62): GatewayWorker\Lib\DbConnection->query('UPDATE `wei_cha...')
+#3 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#4 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#8 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#14 {main}
+2019-09-23 20:34:47 exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'mlaychat'' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1697
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1697): PDO->__construct('mysql:dbname=ml...', 'root', 'root', Array)
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1683): GatewayWorker\Lib\DbConnection->connect()
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\Db.php(48): GatewayWorker\Lib\DbConnection->__construct('127.0.0.1', 3306, 'root', 'root', 'mlaychat')
+#3 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(288): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"chatMe...')
+#5 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"chatMe...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#14 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#15 {main}
+2019-09-23 20:34:48 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:34:48 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:34:53 exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'mlaychat'' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1697
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1697): PDO->__construct('mysql:dbname=ml...', 'root', 'root', Array)
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1683): GatewayWorker\Lib\DbConnection->connect()
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\Db.php(48): GatewayWorker\Lib\DbConnection->__construct('127.0.0.1', 3306, 'root', 'root', 'mlaychat')
+#3 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(59): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#5 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#14 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#15 {main}
+2019-09-23 20:44:20 exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'mlaychat'' in D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php:1697
+Stack trace:
+#0 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1697): PDO->__construct('mysql:dbname=ml...', 'root', 'root', Array)
+#1 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\DbConnection.php(1683): GatewayWorker\Lib\DbConnection->connect()
+#2 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\Lib\Db.php(48): GatewayWorker\Lib\DbConnection->__construct('127.0.0.1', 3306, 'root', 'root', 'mlaychat')
+#3 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\Events.php(59): GatewayWorker\Lib\Db::instance('db1')
+#4 [internal function]: Events::onMessage('7f00000108fc000...', '{"type":"init",...')
+#5 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(360): call_user_func('Events::onMessa...', '7f00000108fc000...', '{"type":"init",...')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Connection\TcpConnection.php(430): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#9 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Events\Select.php(257): call_user_func_array(Array, Array)
+#10 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(745): Workerman\Events\Select->loop()
+#11 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\GatewayWorker\BusinessWorker.php(174): Workerman\Worker->run()
+#12 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(433): GatewayWorker\BusinessWorker->run()
+#13 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Workerman\Worker.php(346): Workerman\Worker::runAllWorkers()
+#14 D:\UPUPW_NP5.6\htdocs\webim\vendor\Workerman\Applications\start_businessworker.php(34): Workerman\Worker::runAll()
+#15 {main}
+2019-09-23 20:45:30 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:30 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:35 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:35 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:40 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:40 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:50 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:50 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:55 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:45:55 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:00 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:00 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:10 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:15 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:15 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:20 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:20 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:25 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:25 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:30 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:30 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:36 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:36 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:42 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:42 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:48 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:48 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:54 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:46:54 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:00 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:00 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:16 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:16 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:28 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:28 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:35 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:35 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:41 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:41 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:47 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:47 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:53 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:53 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:59 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:47:59 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:05 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:18 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:18 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:23 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:30 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:30 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:35 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:35 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:41 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:41 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:46 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:51 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:51 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:56 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:48:56 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:01 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:01 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:06 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:06 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:16 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:16 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:22 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:22 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:27 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:27 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:32 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:32 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:38 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:38 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:44 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:44 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:49:52 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready
+2019-09-23 20:50:11 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready

@@ -1,0 +1,48 @@
+{extend name='admin@main'}
+
+{block name="content"}
+<div class="think-box-shadow">
+    {include file='member/index_search'}
+    <table class="layui-table margin-top-10" lay-skin="line">
+        {notempty name='list'}
+        <thead>
+        <tr>
+            <th class='list-table-check-td think-checkbox'>
+                <input data-auto-none data-check-target='.list-check-box' type='checkbox'>
+            </th>
+            <th class='text-left nowrap'>用户名</th>
+            <th class='text-left nowrap'>手机号</th>
+            <th class='text-left nowrap'>注册时间</th>
+            <th class='text-left nowrap'>登录时间</th>
+            <th class='text-left nowrap'>操作</th>
+        </tr>
+        </thead>
+        {/notempty}
+        <tbody>
+        {foreach $list as $key=>$vo}
+        <tr>
+            <td class='list-table-check-td think-checkbox'>
+                <label><input class="list-check-box" value='{$vo.id}' type='checkbox'></label>
+            </td>
+            <td class='text-left nowrap'>
+                {notempty name='vo.avatar'}
+                <img data-tips-image style="width:20px;height:20px;vertical-align:top" src="{$vo.avatar|default=''}" class="margin-right-5">
+                {/notempty}
+                <div class="inline-block">{$vo.username|default='--'}</div>
+            </td>
+            <td class='text-left'>{$vo.phone|default='--'}</td>
+            <td class='text-left'>{$vo.created_time|format_datetime}</td>
+            <td class='text-left'>{$vo.updated_time|format_datetime}</td>
+            <td class='text-left'>
+                <!--<a class="layui-btn layui-btn-normal layui-btn-sm" data-title="查看聊天记录" data-modal='{:url("see")}?id={$vo.id}'>查看聊天记录</a>-->
+                <a class="layui-btn layui-btn-normal layui-btn-sm" data-title="查看聊天记录" href='/admin.html#{:url("see")}?id={$vo.id}'>查看聊天记录</a>
+                <a class="layui-btn layui-btn-normal layui-btn-sm" data-title="设置密码" data-modal='{:url("pass")}?id={$vo.id}'>密 码</a>
+                <a data-dbclick class="layui-btn layui-btn-sm" data-title="编辑用户" data-modal='{:url("edit")}?id={$vo.id}'>编 辑</a>
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    {empty name='list'}<span class="notdata">没有记录哦</span>{else}{$pagehtml|raw|default=''}{/empty}
+</div>
+{/block}

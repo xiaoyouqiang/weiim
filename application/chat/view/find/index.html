@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>查找/创建群</title>
+    <link rel="stylesheet" href="/static/layuinew/css/layui.css" media="all">
+    <link href="/static/admin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/static/admin/css/style.min.css?v=4.1.0" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/layuinew/layui.js"></script>
+</head>
+<body>
+<div class="layui-row">
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li {if($type == 'user'  || $type == '')}  class="layui-this" {/if}>找人</li>
+            <li {if($type == 'group')}  class="layui-this" {/if}>找群</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item {if($type == 'user' || $type == '')}  layui-show {/if}">
+                <div>
+                    <input  style="float: left;width: 90%;" type="text" id="user-wd" required lay-verify="required" placeholder="请输入昵称" autocomplete="off" class="layui-input" {if($type == 'user')} value="{$wd}" {/if}>
+                    <button onclick="findUser(1)" style="float: right;width: 10%"  class="layui-btn">
+                        <i class="layui-icon">&#xe615;</i> 查找
+                    </button>
+                </div>
+                <div class="layui-row" id="search_user">
+
+                </div>
+                <div style="text-align:center;clear: both">
+                    <div id="page_user"></div>
+                </div>
+            </div>
+            <div class="layui-tab-item {if($type == 'group')}  layui-show {/if}">
+                <div>
+                    <input  style="float: left;width: 62%;" type="text" id="group-wd" required lay-verify="required" placeholder="请输入群名称" autocomplete="off" class="layui-input" {if($type == 'group')} value="{$wd}" {/if}>
+                    <button onclick="createGroup()" style="float: left;width: 11%"  class="layui-btn layui-btn-warm">
+                        <i class="layui-icon">&#xe61f;</i> 创建群
+                    </button>
+                    <button onclick="findGroup(1)" style="float: left;width: 11%;margin-left: 10px"  class="layui-btn">
+                        <i class="layui-icon">&#xe615;</i> 查找群
+                    </button>
+                    <button onclick="myGroup()" style="float: left;width: 11%;margin-left: 10px"  class="layui-btn layui-btn-normal">
+                        <i class="layui-icon">&#xe66f;</i> 我建的群
+                    </button>
+                </div>
+                <div id="search_group" class="layui-row">
+
+                </div>
+                <div style="text-align:center;clear: both">
+                    <div id="page_group"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="search_group_tpl" type="text/html">
+    {{#  layui.each(d.data, function(index, item){ }}
+    <div class="col-sm-3" style="border: 3px solid #f6f6f6"><div><div>
+        <h5>{{item.groupname}}</h5></div><div style="margin-top:15px;margin-bottom: 75px;"><div style="margin: 0 auto;float:left;">
+        <img src="{{item.avatar}}" width="50px" height="50px"/>
+        </div><div style="float: right"><button class="btn btn-primary" type="button" onclick="joinGroup('{{item.id}}')">加入</button></div>
+        </div></div></div>
+    {{#  }); }}
+    {{#  if(d.data.length === 0){ }}
+    <div class="col-sm-12"><div class="ibox float-e-margins"><div style="padding-top:15px">
+        <div class="form-group"><div class="col-sm-10"><label style="color: red">{{d.msg}}</label>
+            </div></div></div></div></div>
+    {{#  } }}
+</script>
+
+<script id="search_user_tpl" type="text/html">
+    {{#  layui.each(d.data, function(index, item){ }}
+    <div class="col-sm-3" style="border: 3px solid #f6f6f6"><div><div>
+        <h5>{{item.username}}</h5></div><div style="margin-top:15px;margin-bottom: 75px;"><div style="margin: 0 auto;float:left;">
+        <img src="{{item.avatar}}" width="50px" height="50px"/>
+    </div><div style="float: right"><button class="btn btn-primary" type="button" onclick="addFriend('{{item.id}}', '{{item.username}}', '{{item.avatar}}')">添加</button></div>
+    </div></div></div>
+    {{#  }); }}
+    {{#  if(d.data.length === 0){ }}
+    <div class="col-sm-12"><div class="ibox float-e-margins"><div style="padding-top:15px">
+        <div class="form-group"><div class="col-sm-10"><label style="color: red">{{d.msg}}</label>
+        </div></div></div></div></div>
+    {{#  } }}
+</script>
+
+<script>
+    document.domain = '{$domain}';
+    var layer;
+    layui.use('layer', function(){
+        layer = layui.layer;
+    });
+    layui.use('laytpl', function(){
+        laytpl = layui.laytpl;
+    });
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+    userCount = 0;
+    function renderPage() {
+        layui.use('laypage', function(){
+            var laypage = layui.laypage;
+            //执行一个laypage实例
+            laypage.render({
+                elem: 'page_user' //注意，这里的 test1 是 ID，不用加 # 号
+                ,count: userCount //数据总数，从服务端得到
+                ,jump: function(obj, first){
+                    //obj包含了当前分页的所有参数，比如：
+                    //首次不执行
+                    if(!first){
+                        findUser(obj.curr)
+                    }
+                }
+            });
+        });
+    }
+    groupCount = 0;
+    function renderGroupPage() {
+        layui.use('laypage', function(){
+            var laypage = layui.laypage;
+            //执行一个laypage实例
+            laypage.render({
+                elem: 'page_group' //注意，这里的 test1 是 ID，不用加 # 号
+                ,count: groupCount //数据总数，从服务端得到
+                ,jump: function(obj, first){
+                    //obj包含了当前分页的所有参数，比如：
+                    //首次不执行
+                    if(!first){
+                        findGroup(obj.curr)
+                    }
+                }
+            });
+        });
+    }
+    function findUser(page) {
+        wd = $('#user-wd').val();
+        if( '' == wd ){
+            layer.alert('昵称不能为空', {'icon':2});
+            return;
+        }
+        $.getJSON("{:url('find/searchUser')}", {'user_name':wd, 'page':page}, function(res){
+            var getTpl = search_user_tpl.innerHTML
+                ,view = document.getElementById('search_user');
+            laytpl(getTpl).render(res, function(html){
+                view.innerHTML = html;
+            });
+            userCount = res.count;
+            if (userCount && page == 1) {
+                renderPage();
+            }
+        })
+    }
+    function findGroup(page) {
+        groupName = $('#group-wd').val();
+        if( '' == groupName ){
+            layer.alert('群名称不能为空', {'icon':2});
+            return;
+        }
+        $.getJSON("{:url('find/search')}", {'group_name':groupName, 'page':page}, function(res){
+            var getTpl = search_group_tpl.innerHTML
+                ,view = document.getElementById('search_group');
+            laytpl(getTpl).render(res, function(html){
+                view.innerHTML = html;
+            });
+            groupCount = res.count;
+            if (groupCount && page == 1) {
+                renderGroupPage();
+            }
+        })
+    }
+    function myGroup() {
+        window.location.href = "{:url('find/myGroup')}";
+    }
+    function addFriend(id,nickname,avatar) {
+        layui.use('layim', function(layim){
+            layim.add({
+                type: 'friend' //friend：申请加好友、group：申请加群
+                ,username: nickname //好友昵称，若申请加群，参数为：groupname
+                ,avatar: avatar //头像
+                ,submit: function(group, remark, index){ //一般在此执行Ajax和WS，以通知对方
+                    $.getJSON("{:url('find/addFriend')}", {'to_user_id' : id, 'group' : group, 'remark' : remark}, function(res){
+                        if( 1 == res.code ){
+                            var data = {type:"addFriend",to_user_id:id,to_friend_group_id:group,remark:remark};
+                            parent.sendMessage(parent.socket,JSON.stringify(data));
+                            layer.alert( res.msg, {'icon' : 1} );
+                        }else{
+                            layer.alert( res.msg, {'icon' : 2} );
+                        }
+                    })
+
+                    layer.close(index); //关闭改面板
+                }
+            });
+        });
+    }
+
+    function joinGroup(groupid) {
+        $.getJSON("{:url('find/joinGroup')}", {'gid' : groupid}, function(res){
+            if( 1 == res.code ){
+                var join_data = res.data;
+                // socket.send( join_data );//发送socket
+                var join_data_new = JSON.parse(join_data);
+                var group_data = join_data_new.data;
+                parent.sendMessage(parent.socket,join_data);
+                var data = {
+                    type: 'group' //列表类型，只支持friend和group两种
+                    ,avatar: group_data.avatar //群组头像
+                    ,groupname: group_data.groupname //群组名称
+                    ,id: group_data.id //群组id
+                };
+                parent.layim.addList(data); //如果是在iframe页，如LayIM设定的add面板，则为 parent.layui.layim.addList(data);
+                layer.alert( res.msg, {'icon' : 1});
+            }else{
+                layer.alert( res.msg, {'icon' : 2} );
+            }
+        })
+    }
+
+    function createGroup() {
+        layer.open({
+            type: 2,
+            title: '创建群',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['40%', '70%'],
+            content: "{:url('find/addgroup')}"
+        });
+    }
+</script>
+</body>
+</html>

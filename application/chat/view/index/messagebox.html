@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>消息盒子</title>
+    <link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7/css/bootstrap.css">
+    <style>
+        .layim-msgbox{margin: 15px;}
+        .layim-msgbox li{position: relative; margin-bottom: 10px; padding: 0 130px 10px 60px; padding-bottom: 10px; line-height: 22px; border-bottom: 1px dotted #e2e2e2;}
+        .layim-msgbox .layim-msgbox-tips{margin: 0; padding: 10px 0; border: none; text-align: center; color: #999;}
+        .layim-msgbox .layim-msgbox-system{padding: 0 10px 10px 10px;}
+        .layim-msgbox li p span{padding-left: 5px; color: #999;}
+        .layim-msgbox li p em{font-style: normal; color: #FF5722;}
+
+        .layim-msgbox-avatar{position: absolute; left: 0; top: 0; width: 50px; height: 50px;}
+        .layim-msgbox-user{padding-top: 5px;}
+        .layim-msgbox-content{margin-top: 3px;}
+        .layim-msgbox .layui-btn-small{padding: 0 15px; margin-left: 5px;}
+        .layim-msgbox-btn{position: absolute; right: 0; top: 12px; color: #999;}
+    </style>
+</head>
+<body>
+<ul class="layim-msgbox" id="LAY_view">
+
+</ul>
+<div style="text-align:center">
+    <div id="page"></div>
+</div>
+<script id="message_tpl" type="text/html">
+    {{#  layui.each(d.data.list, function(index, item){ }}
+    {{#  if(item.type=== 0){ }}
+    <li data-uid="{{item.user_id}}" data-fromgroup="{{item.group_id}}">
+        <a href="javascript:;">
+            <img style="width: 40px;height: 40px" src="{{item.avatar}}" class="layui-circle layim-msgbox-avatar"></a>
+        <p class="layim-msgbox-user">
+            <a href="javascript:;" >{{item.username}}</a>
+            <span>{{item.time}}</span></p>
+        <p class="layim-msgbox-content">申请添加你为好友
+            <span>附言: {{item.remark}}</span></p>
+        <p class="layim-msgbox-btn">
+            {{#  if(item.status=== 0){ }}
+            <button class="layui-btn layui-btn-small" onclick="agree({{item.id}},$(this),'{{item.avatar}}','{{item.username}}')">同意</button>
+            <button class="layui-btn layui-btn-small layui-btn-primary" onclick="refuse({{item.id}},$(this))">拒绝</button>
+            {{#  } }}
+            {{#  if(item.status!== 0){ }}
+            <span>已
+               {{#  if(item.status=== 1){ }}
+                同意
+                {{#  } }}
+                {{#  if(item.status!== 1){ }}
+                拒绝
+                {{#  } }}
+            </span>
+            {{#  } }}
+        </p>
+    </li>
+    {{#  } }}
+    {{#  if(item.type!== 0){ }}
+    <li class="layim-msgbox-system">
+        <p>
+            <em>系统：</em>{{item.username}} 已经
+            {{#  if(item.status=== 1){ }}
+            同意
+            {{#  } }}
+            {{#  if(item.status!== 1){ }}
+            拒绝
+            {{#  } }}
+            你的好友申请
+            <span>{{item.time}}</span></p>
+    </li>
+    {{#  } }}
+    {{#  }); }}
+
+</script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/static/layui/layui.js"></script>
+<script>
+    document.domain = '{$domain}';
+
+    var layer;
+    layui.use('layer', function(){
+        layer = layui.layer;
+    });
+    layui.use('laytpl', function(){
+        laytpl = layui.laytpl;
+    });
+    layui.use('laypage', function(){
+        var laypage = layui.laypage;
+
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'page' //注意，这里的 test1 是 ID，不用加 # 号
+            ,count: "{$count}" //数据总数，从服务端得到
+            ,jump: function(obj, first){
+                //obj包含了当前分页的所有参数，比如：
+                //首次不执行
+                 if(!first){
+                    getSystem(obj.curr)
+                }
+            }
+        });
+    });
+    $(document).ready(function(){
+        getSystem(1);
+    });
+    function getSystem(page) {
+        $.getJSON("{:url('index/messageBox')}", {'page' : page}, function(res){
+            var _html = '';
+            if( 1 == res.code ){
+                var getTpl = message_tpl.innerHTML
+                    ,view = document.getElementById('LAY_view');
+                laytpl(getTpl).render(res, function(html){
+                    view.innerHTML = html;
+                })
+            }
+        })
+    }
+    function refuse(id,obj) {
+        $.ajax({
+            url : "{:url('find/refuseFriend')}",
+            type: "post",
+            data: {id:id},
+            dataType:"json",
+            success:function (res) {
+                if (1 == res.code){
+                    layer.msg(res.msg)
+                    //如果成功了，发出socket消息，通知被拒绝者
+                    obj.parent().html('<span>已拒绝</span>');
+                    parent.sendMessage(parent.socket,JSON.stringify({type:"refuseFriend",id:id}))
+                }else{
+                    layer.msg(res.msg,function(){})
+                }
+            },
+            error: function () {
+                layer.msg("网络繁忙",function(){})
+            }
+        });
+    }
+    function agree(id,obj,avatar,nickname){
+        parent.layui.layim.setFriendGroup({
+            type: 'friend'
+            ,username: nickname //好友昵称，若申请加群，参数为：groupname
+            ,avatar: avatar //头像
+            ,group: parent.layui.layim.cache().friend //获取好友列表数据
+            ,submit: function(group, index){
+                parent.layer.close(index); //关闭改面板
+                $.ajax({
+                    url:"{:url('find/agreeFriend')}",
+                    type:"post",
+                    data:{id:id,groupid:group},
+                    dataType:"json",
+                    success:function (res) {
+                        console.log(res)
+                        //执行添加好友操作
+                        if (1 == res.code){
+                            uid = obj.parents('li').attr('data-uid');
+                            fromgroup = obj.parents('li').attr('data-fromgroup');
+                            console.log(uid)
+                            console.log(fromgroup)
+                            parent.sendMessage(parent.socket, JSON.stringify({type:"agreeFriend",user_id:uid,fromgroup:fromgroup}))//通知对方，我已同意，把我加入到对方好友列表并添加消息提醒
+                            parent.layui.layim.addList(res.data); //将刚通过的好友追加到好友列表
+                            obj.parent().html('<span>已同意</span>');
+                        } else {
+                            layer.msg(res.msg,function(){});
+                        }
+                    },
+                    error:function () {
+                        layer.msg("网络繁忙",function(){});
+                    }
+                })
+            }
+        });
+    }
+</script>
+</body>
+</html>

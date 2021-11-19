@@ -1,0 +1,47 @@
+{extend name='admin@main'}
+
+{block name="content"}
+<div class="think-box-shadow">
+    {include file='chatlog/index_search'}
+    <table class="layui-table margin-top-10" lay-skin="line">
+        {notempty name='list'}
+        <thead>
+        <tr>
+            <th class='list-table-check-td think-checkbox'>
+                <input data-auto-none data-check-target='.list-check-box' type='checkbox'>
+            </th>
+            <th class='text-left nowrap'>发起会话者</th>
+            <th class='text-left nowrap'>被聊天者</th>
+            <th class='text-left nowrap'>发送的内容</th>
+            <th class='text-left nowrap'>记录时间</th>
+        </tr>
+        </thead>
+        {/notempty}
+        <tbody>
+        {foreach $list as $key=>$vo}
+        <tr>
+            <td class='list-table-check-td think-checkbox'>
+                <label><input class="list-check-box" value='{$vo.id}' type='checkbox'></label>
+            </td>
+            <td class='text-left nowrap'>
+                {notempty name='vo.username1'}
+                <img data-tips-image style="width:20px;height:20px;vertical-align:top" src="{$vo.img1|default=''}" class="margin-right-5">
+                {/notempty}
+                <div class="inline-block">{$vo.username1|default='--'}</div>
+            </td>
+            <td class='text-left nowrap'>
+                {notempty name='vo.username2'}
+                <img data-tips-image style="width:20px;height:20px;vertical-align:top" src="{$vo.img2|default=''}" class="margin-right-5">
+                {/notempty}
+                <div class="inline-block">{$vo.username2|default='--'}</div>
+            </td>
+            <td class='text-left' title="{$vo.content}">{$vo.content|subText=20}</td>
+            <td class='text-left'>{$vo.timeline|format_datetime}</td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    {empty name='list'}<span class="notdata">没有记录哦</span>{else}{$pagehtml|raw|default=''}{/empty}
+    </d>
+</div>
+{/block}

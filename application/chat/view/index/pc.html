@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WeiIm PC</title>
+    <script src="/static/im/pc.js"></script>
+    <script src="/static/admin/js/jquery.min.js"></script>
+    <script src="/static/admin/js/jquery.cookie.js"></script>
+</head>
+<body>
+
+<script>
+    var loginToken = $.cookie('uid') ? $.cookie('uid') :0;
+    document.domain = '{$domain}';
+    runIm('{$root_domain}', "{$socket_domain}", loginToken);
+</script>
+</body>
+</html>

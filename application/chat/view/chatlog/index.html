@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天记录</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/static/admin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/static/admin/css/style.min.css?v=4.1.0" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox chat-view">
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-9 ">
+                            <div id="chatlog">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="text-align:center;clear: both">
+    <div id="page"></div>
+</div>
+<script id="chat_log_tpl" type="text/html">
+    <%# layui.each(d.data, function(index, item){
+
+    }); %>
+</script>
+<style>
+    .avatar{
+       float: left;
+    }
+    .avatar img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+    .chatcontent{
+        width: 300px;
+        word-break: break-all;
+        clear: both;
+        padding-top: 5px;
+    }
+    .chattitle{
+        color: #c2c2c2;
+    }
+    .username{
+        float: left;;
+    }
+    .chattime{
+        float:right;
+    }
+    .chatright{
+        float: left;
+        padding-left: 10px;
+    }
+    .chatclear{
+        clear: both;
+        border-bottom: 1px solid #e7eaec;
+        padding-top: 10px;
+    }
+</style>
+<script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
+<link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
+<script src="/static/layui/layui.js"></script>
+<script type="text/javascript">
+    var layer;
+    var layim;
+
+
+    chatCount = 0;
+    function renderPage() {
+        layui.use('laypage', function(){
+            var laypage = layui.laypage;
+            //执行一个laypage实例
+            laypage.render({
+                elem: 'page' //注意，这里的 test1 是 ID，不用加 # 号
+                ,count: chatCount //数据总数，从服务端得到
+                ,jump: function(obj, first){
+                    //obj包含了当前分页的所有参数，比如：
+                    //首次不执行
+                    if(!first){
+                        getChatLog(obj.curr)
+                    }
+                }
+            });
+        });
+    }
+
+    function getChatLog(page)
+    {
+        $.getJSON("{:url('chatlog/detail')}", {'id' : {$id}, 'type' : "{$type}", 'page':page}, function(res){
+            var _html = '';
+            if( 1 == res.code ){
+                $.each(res.data, function(k, v){
+                    var id = v.fromid;
+                    _html += '<div class="chat-message">\n' +
+                        '    <div class="avatar"><img src="' + res.chat_users[id]['avatar'] + '"></div>\n' +
+                        '    <div class="chatright">\n' +
+                        '        <div class="chattitle">\n' +
+                        '            <div class="username">' +  v.fromname + '</div>\n' +
+                        '            <div class="chattime">'+ getLocalTime(v.timeline) + '</div>\n' +
+                        '        </div>\n' +
+                        '        <div class="chatcontent">'+ layim.content(v.content) + '</div>\n' +
+                        '    </div>\n' +
+                        '</div>' +
+                        ' <div class="chatclear"></div>';
+                });
+                $("#chatlog").html(_html);
+                chatCount = res.count;
+                if (page == 1) {
+                    renderPage();
+                }
+                // var getTpl = chat_log_tpl.innerHTML
+                //     ,view = document.getElementById('chatlog');
+                // laytpl(getTpl).render(res, function(html){
+                //     view.innerHTML = html;
+                // });
+
+            }else{
+
+            }
+        })
+    }
+
+    $(document).ready(function(){
+        layui.use('layer', function(){
+            layer = layui.layer;
+        });
+        layui.use('laytpl', function(){
+            laytpl = layui.laytpl;
+            laytpl.config({
+                open: '<%',
+                close: '%>'
+            });
+        });
+        layui.use('layim', function(){
+            layim = layui.layim;
+            getChatLog(1);
+        });
+    });
+
+    function getLocalTime(nS) {
+        return new Date(parseInt(nS) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, "");
+    }
+</script>
+</body>
+</html>
